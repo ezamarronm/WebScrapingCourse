@@ -1,0 +1,52 @@
+news_sites:
+  # eluniversal:
+  #   url: https://www.eluniversal.com.mx
+  #   queries:
+  #     homepage_article_links: '.field-content a'
+  #     article_body: '.field-name-body'
+  #     article_title: '.pane-content h1'
+  # elpais:
+  #   url: https://www.elpais.com
+  #   queries:
+  #     homepage_article_links: '.headline a'
+  #     article_body: '.article_body'
+  #     article_title: '.article-header h1'
+  pagina12:
+    url: https://www.pagina12.com.ar
+    queries:
+      homepage_article_links: '.article-list a'
+      homepage_header_links:
+        tag: 'ul'
+        class_: 'hot-sections'
+        all: 'li'
+      article_date: '.time span'
+      article_prefix: '.article-prefix'
+      article_title: '.article-title'
+      article_summary: '.article-summary'
+      article_body: '.article-text'
+      article_author: '.article-author'
+
+  elheraldo:
+    url: https://www.elheraldo.co
+    queries:
+      homepage_article_links: '.item h1 a'
+      homepage_header_links:
+        tag: 'ul'
+        class_: 'menu'
+        all: 'li'
+      article_date: '.time span'
+      article_prefix: '.article-prefix'
+      article_title: '.title h1'
+      article_summary: '.summary'
+      article_body: '.description'
+      article_author: '.autor span a'
+  elespectador:
+    url: https://www.elespectador.com
+    queries:
+      homepage_header_links:
+        tag: 'ul'
+        class_: 'menu'
+        all: 'li'
+
+      
+
